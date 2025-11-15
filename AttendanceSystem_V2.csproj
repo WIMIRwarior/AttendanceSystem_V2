@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPanel_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel_Form.Designer.cs">
+      <DependentUpon>AdminPanel_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,6 +80,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentPanel_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentPanel_Form.Designer.cs">
+      <DependentUpon>StudentPanel_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherPanel_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherPanel_Form.Designer.cs">
+      <DependentUpon>TeacherPanel_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPanel_Form.resx">
+      <DependentUpon>AdminPanel_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +110,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentPanel_Form.resx">
+      <DependentUpon>StudentPanel_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherPanel_Form.resx">
+      <DependentUpon>TeacherPanel_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>

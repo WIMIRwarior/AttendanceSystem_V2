@@ -35,6 +35,7 @@
             this.metroTextBox_Login = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox_Password = new MetroFramework.Controls.MetroTextBox();
             this.metroButton_Login = new MetroFramework.Controls.MetroButton();
+            this.metroButton_ExitApp = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,7 +140,7 @@
             // 
             // metroButton_Login
             // 
-            this.metroButton_Login.Location = new System.Drawing.Point(135, 273);
+            this.metroButton_Login.Location = new System.Drawing.Point(177, 273);
             this.metroButton_Login.Name = "metroButton_Login";
             this.metroButton_Login.Size = new System.Drawing.Size(75, 23);
             this.metroButton_Login.TabIndex = 5;
@@ -147,12 +148,23 @@
             this.metroButton_Login.UseSelectable = true;
             this.metroButton_Login.Click += new System.EventHandler(this.metroButton_Login_Click);
             // 
+            // metroButton_ExitApp
+            // 
+            this.metroButton_ExitApp.Location = new System.Drawing.Point(12, 273);
+            this.metroButton_ExitApp.Name = "metroButton_ExitApp";
+            this.metroButton_ExitApp.Size = new System.Drawing.Size(75, 23);
+            this.metroButton_ExitApp.TabIndex = 6;
+            this.metroButton_ExitApp.Text = "Exit App";
+            this.metroButton_ExitApp.UseSelectable = true;
+            this.metroButton_ExitApp.Click += new System.EventHandler(this.metroButton_ExitApp_Click);
+            // 
             // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(264, 306);
             this.ControlBox = false;
+            this.Controls.Add(this.metroButton_ExitApp);
             this.Controls.Add(this.metroButton_Login);
             this.Controls.Add(this.metroTextBox_Password);
             this.Controls.Add(this.metroTextBox_Login);
@@ -160,6 +172,7 @@
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Login_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -176,5 +189,6 @@
         private MetroFramework.Controls.MetroTextBox metroTextBox_Login;
         private MetroFramework.Controls.MetroTextBox metroTextBox_Password;
         private MetroFramework.Controls.MetroButton metroButton_Login;
+        private MetroFramework.Controls.MetroButton metroButton_ExitApp;
     }
 }

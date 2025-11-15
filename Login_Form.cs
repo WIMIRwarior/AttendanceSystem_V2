@@ -16,6 +16,10 @@ namespace AttendanceSystem_V2
         private int number_of_attempts = 0;
         private int max_number_of_attempts = 3;
 
+        public string User_ID { get; set; }
+        public string User_Type { get; set; }
+        public string User_Name {  get; set; }
+
         public Login_Form()
         {
             InitializeComponent();
@@ -35,6 +39,9 @@ namespace AttendanceSystem_V2
 
             if (LoginsAndPasswords_DT.Rows.Count > 0)
             {
+                User_ID = LoginsAndPasswords_DT.Rows[0][0].ToString();
+                User_Name = LoginsAndPasswords_DT.Rows[0][1].ToString();
+                User_Type = LoginsAndPasswords_DT.Rows[0][2].ToString();
                 MessageBox.Show("Login OK");
                 this.Close();
             }
@@ -53,6 +60,11 @@ namespace AttendanceSystem_V2
             }
 
 
+        }
+
+        private void metroButton_ExitApp_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
