@@ -16,5 +16,14 @@ namespace AttendanceSystem_V2
         {
             InitializeComponent();
         }
+
+        private void metroButton_AddUser_Click(object sender, EventArgs e)
+        {
+            //Run AddUser Form
+            AddUser_Form addUser_Form = new AddUser_Form();
+            this.Hide();
+            addUser_Form.ShowDialog();
+            this.Show();
+        }
     }
 }
